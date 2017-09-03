@@ -15,6 +15,11 @@ public class LoginController {
     @Value("${application.message:Hello World}")
     private String message = "Hello World";
 
+    @GetMapping("/")
+    public String login() {
+        return "index";
+    }
+
     @GetMapping("/welcome")
     public String welcome(Map<String, Object> model) {
         model.put("time", new Date());

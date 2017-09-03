@@ -53,6 +53,9 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
     runtime 'org.springframework.boot:spring-boot-starter-jetty'
     compile 'org.springframework.boot:spring-boot-starter-freemarker'
+    compile 'org.springframework.boot:spring-boot-starter-security'
+    compile 'org.springframework.security.oauth:spring-security-oauth2'
+
     compile 'com.google.guava:guava:18.0'
 
     swaggerApi (group:"com.navid.usermanager", name: 'contract', version:"${supported_api_version}", ext:"yml")
@@ -60,6 +63,12 @@ dependencies {
     testCompile "org.codehaus.groovy:groovy-all:2.4.10"
     testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
     testCompile 'com.athaydes:spock-reports:1.2.7'
+
+    //auth
+    compile 'org.webjars:angularjs:1.4.3'
+    compile 'org.webjars:jquery:2.1.1'
+    compile 'org.webjars:bootstrap:3.2.0'
+    compile 'org.webjars:webjars-locator'
 }
 
 def ci_branch = "UNSET"

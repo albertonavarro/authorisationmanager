@@ -8,7 +8,7 @@
  * in the user guide at https://docs.gradle.org/3.3/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'usermanager'
+rootProject.name = 'authorisationmanager'
 include 'contract'
 include 'springboot'
 include 'flyway'
