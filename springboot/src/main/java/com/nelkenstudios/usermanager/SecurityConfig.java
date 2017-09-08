@@ -36,11 +36,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.antMatcher("/**")
                 .authorizeRequests()
-                .antMatchers("/", "/login**", "/webjars/**").permitAll()
+                .antMatchers("/", "/login**", "/webjars/**", "/winchan/**").permitAll()
                 .anyRequest().authenticated()
                 .and().exceptionHandling()
-                .authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/")).and()
-                .logout().logoutSuccessUrl("/").permitAll()
+                .authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/web/login/a")).and()
+                .logout().logoutSuccessUrl("/web/login/a").permitAll()
                 //.and().csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and().addFilterBefore(ssoFilter(), BasicAuthenticationFilter.class);
     }

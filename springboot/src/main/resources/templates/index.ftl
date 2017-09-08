@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
     <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/winchan/winchan.js"></script>
+
 </head>
     <body ng-app="app" ng-controller="home as home">
         <h1>Login</h1>
@@ -26,6 +28,7 @@
             <div>
                 <button ng-click="home.logout()" class="btn btn-primary">Logout</button>
             </div>
+            <button>close</button>
         </div>
         <script type="text/javascript" src="/webjars/angularjs/angular.min.js"></script>
         <script type="text/javascript">
@@ -50,5 +53,15 @@
             };
           });
         </script>
+
+        <script type="text/javascript">
+
+         WinChan.onOpen(function(origin, args, cb) {
+          cb({
+            "these things": "xxx"
+          });
+          window.close();
+        });
+            </script>
     </body>
 </html>
