@@ -54,14 +54,6 @@
           });
         </script>
 
-        <script type="text/javascript">
 
-         WinChan.onOpen(function(origin, args, cb) {
-          cb({
-            "these things": "xxx"
-          });
-          window.close();
-        });
-            </script>
     </body>
 </html>

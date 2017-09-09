@@ -1,9 +1,10 @@
 apply plugin: 'docker'
 
 group = "albertonavarro"
-applicationName = "recordserver"
+applicationName = "usermanager"
 
 distDocker {
-    //push = true
+    push = true
     baseImage "openjdk:8-jre-alpine"
+    tagVersion = "6"
 }

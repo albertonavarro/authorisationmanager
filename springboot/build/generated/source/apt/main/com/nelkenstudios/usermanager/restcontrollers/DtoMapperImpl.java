@@ -10,7 +10,7 @@ import javax.annotation.Generated;
 
     value = "org.mapstruct.ap.MappingProcessor",
 
-    comments = "version: 1.2.0.CR1, compiler: javac, environment: Java 1.8.0_131 (Oracle Corporation)"
+    comments = "version: 1.2.0.CR1, compiler: javac, environment: Java 1.8.0_144 (Oracle Corporation)"
 
 )
 
