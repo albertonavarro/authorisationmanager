@@ -2,7 +2,7 @@ package com.navid.codegen.recordserver.api;
 
 import javax.xml.bind.annotation.XmlTransient;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2017-09-09T13:08:54.983+02:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2017-09-11T00:37:51.409+02:00")
 
 @javax.xml.bind.annotation.XmlRootElement
 public class ApiResponseMessage {

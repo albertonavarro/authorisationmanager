@@ -58,7 +58,7 @@
 
          WinChan.onOpen(function(origin, args, cb) {
           cb({
-            "these things": "xxx"
+            "jwttoken": "${jwttoken}"
           });
           window.close();
         });
