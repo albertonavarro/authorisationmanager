@@ -5,7 +5,7 @@
     "Key": "config.old.json"
   },
   "Image": {
-    "Name": "albertonavarro/usermanager:6",
+    "Name": "albertonavarro/usermanager:14",
     "Update": "true"
   },
   "Ports": [

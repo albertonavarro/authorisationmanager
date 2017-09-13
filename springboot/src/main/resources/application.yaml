@@ -39,6 +39,8 @@ github:
   resource:
     userInfoUri: https://api.github.com/user
 security:
+  jwt:
+    privateKey: TO_BE_SET
   oauth2:
     client:
       client-id: acme

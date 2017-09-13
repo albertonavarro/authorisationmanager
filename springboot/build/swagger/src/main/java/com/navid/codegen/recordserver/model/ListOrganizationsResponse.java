@@ -7,7 +7,7 @@ import javax.validation.constraints.*;
 /**
  * ListOrganizationsResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2017-09-11T00:37:51.409+02:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2017-09-13T22:47:42.436+02:00")
 
 public class ListOrganizationsResponse   {
 
