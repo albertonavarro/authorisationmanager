@@ -17,7 +17,12 @@ info:
         name: User Manager
         version: ${VERSION}
 server:
-    port: 8080
+  port: 8443
+  ssl:
+    key-store: classpath:keystore.pkcs12
+    key-store-password: TO_BE_SET
+    keyStoreType: PKCS12
+    keyAlias: TO_BE_SET
 facebook:
   client:
     clientId: 233668646673605
