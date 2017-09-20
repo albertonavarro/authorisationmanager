@@ -11,6 +11,28 @@ produces:
 - application/json
 paths:
   /organizations:
+    post:
+      consumes:
+      - application/json
+      description: Creates organization where invoking user is owner
+      operationId: createOrganization
+      parameters:
+      - name: correlationId
+        in: header
+        required: false
+        type: string
+        description: Request unique id.
+      - name: organization
+        in: body
+        required: true
+        description: Organization name
+        schema:
+          $ref: '#/definitions/PostOrganizationRequest'
+      responses:
+        200:
+          description: TODO
+          schema:
+            $ref: '#/definitions/PostOrganizationResponse'
     get:
       description: TODO
       operationId: getOrganizations
@@ -27,4 +49,20 @@ paths:
             $ref: '#/definitions/ListOrganizationsResponse'
 definitions:
   ListOrganizationsResponse:
+    type: array
+    items:
+      $ref: '#/definitions/PostOrganizationResponse'
+
+  PostOrganizationRequest:
     type: object
+    properties:
+      name:
+        type: string
+        required: true
+  PostOrganizationResponse:
+    type: object
+    properties:
+      name:
+        type: string
+      id:
+        type: string

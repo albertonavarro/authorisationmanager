@@ -21,10 +21,10 @@ bintray {
 
     pkg {
         repo = 'maven'
-        name = "usermanager"
+        name = project.name
         desc = project.description
         licenses = ['Apache-2.0']
-        vcsUrl = 'https://github.com/albertonavarro/usermanager'
+        vcsUrl = 'https://github.com/albertonavarro/authmanager'
         labels = ["api"]
     }
 }
